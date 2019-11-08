@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  
+  <style>
+      body {
+    background: url('images/EARTH.png') no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100px;
+    font-family:  Helvetica, Arial, sans-serif;
+    
+
+}
+header.dropdownmenu {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.541);
+    
+}
+
+header.dropdownmenu ul {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+header.dropdownmenu ul li {
+    list-style: none;
+    position: relative;
+    padding: 10px 0px;
+    transition: 0.5s;
+    box-sizing: border-box;
+    border-right: 1px solid rgba(255, 255, 255, 0.582);
+}
+header.dropdownmenu ul li:hover {
+    background: #2196f3;
+}
+header.dropdownmenu ul li:last-child {
+    border-right: none;
+}
+header.dropdownmenu ul li a {
+    text-decoration: none;
+    padding: 0 20px;
+    color: #fff;
+    
+}
+header.dropdownmenu ul li ul {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.452);
+    top: 38px;
+    left: 0;
+    display: block;
+    width: 200px;
+    transition: .5s;
+    opacity: 0;
+    visibility: hidden;
+
+}
+header.dropdownmenu ul li:hover ul {
+    opacity: 1;
+    visibility: visible;
+}
+header.dropdownmenu ul li ul li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.582);
+    border-right: none;
+
+}
+
+@media (max-width: 768px) {
+    header.dropdownmenu ul {
+        display: block;
+    }
+    header.dropdownmenu ul li {
+        display: block;
+    }
+    header.dropdownmenu ul li ul {
+        width: 100%;
+        z-index: 1;
+    }
+}
+  </style>
+</head>
+<body>
+    <header class="dropdownmenu">
+        <ul>
+            <li><a href="index.html">Home</a></a></li>
+            <li><a href="#">About</a></a></li>
+            <li><a href="#">Services</a></a></li>
+            <li><a href="#">Dropdown</a></a>
+                <ul>
+                    <li><a href="#">submenu 1</a></li>
+                    <li><a href="#">submenu 2</a></li>
+                    <li><a href="#">submenu 3</a></li>
+                    <li><a href="#">submenu 4</a></li>
+                </ul>
+            
+            </li>
+            <li><a href="Contact.html" target="_blank">Portfolio</a></li>
+            <li><a href="#">Contact</a></a></li>
+        </ul>
+    </header>
+    
+</body>
+</html>

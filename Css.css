@@ -1,0 +1,76 @@
+body {
+     
+    background-color: rgb(160, 160, 160);
+    
+}
+
+tr {
+    padding: 20px;
+    margin: 50 px;
+    color: blue;
+    border-width: 20px;
+}
+
+p {
+    border-width: 20px;
+}
+
+p.one {
+overflow: hidden;
+border-width: 2px;
+
+}
+
+p.two {
+overflow: scroll;
+max-width: 200px;
+max-height: 100px;
+border-width: 2px;
+
+}
+
+.top {
+    border-width: 2px;
+}
+
+p:front-letter {
+    font-size: 200%;
+}
+
+.page {
+       
+    font-size: 50px;
+    padding: inherit;
+    background-color: rgb(212, 203, 203);
+    color: rgb(0, 0, 0);
+    border: 2px solid #666544;
+    margin: 0px;
+    text-align:center;
+       
+}
+
+   footer {
+       text-decoration: none;
+   }
+
+
+a:link {
+    text-decoration: none;
+    color: deeppink;
+}
+
+
+a:hover {
+    color: blue;
+    text-shadow: 2px 2px 0px #000000;
+    text-decoration: underline;
+    
+}
+a .hov:hover {
+    color: black;
+    text-decoration: none;
+}
+
+
+
+
